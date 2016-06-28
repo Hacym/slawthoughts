@@ -1,0 +1,40 @@
+#slawHeader {
+    width: 100%;
+	height: 100%;
+    background: url(../images/slaw-hero-image.jpg) no-repeat center center;
+    background-size: cover;
+	-webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	-o-background-size: cover;
+
+    .slaw-header-overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+        background-color: rgba(0,0,0,0.45);
+    }
+
+    .slaw-header-toolbar {
+        position: fixed;
+        background: transparent;
+
+        .slaw-header-title {
+            color: $slaw-green;
+            letter-spacing: 0.5px;
+        }
+
+        .md-icon-button {
+            margin-right: 0;
+
+            md-icon {
+                width: 32px;
+                height: 32px;
+                font-size: 32px;
+                color: $slaw-green;
+            }
+        }
+    }
+}
