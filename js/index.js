@@ -5,7 +5,8 @@ angular
     .module('slawThoughts', [
         'ngRoute',
         'ngAnimate',
-        'ngMaterial'
+        'ngMaterial',
+        'ngtweet'
     ])
     .config(config)
     .run(run);

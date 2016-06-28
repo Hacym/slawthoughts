@@ -29,8 +29,8 @@ body {
 .headshot {
     border-radius: 50%;
     border: 5px solid #FFFFFF;
-    height: 100px;
-    width: 100px;
+    height: 25%;
+    width: 25%;
 }
 
 [ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {

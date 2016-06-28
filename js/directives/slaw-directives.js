@@ -4,7 +4,8 @@
 angular
     .module('slawThoughts')
     .directive('slawHeader', slawHeader)
-    .directive('slawReviews', slawReviews);
+    .directive('slawReviews', slawReviews)
+    .directive('slawInfo', slawInfo);
 
 function slawHeader() {
     return {
@@ -19,6 +20,14 @@ function slawReviews() {
         restrict: 'E',
         replace: true,
         templateUrl: 'partials/directives/slaw-reviews.html'
+    };
+}
+
+function slawInfo() {
+    return {
+        restrict: 'E',
+        replace: true,
+        templateUrl: 'partials/directives/slaw-info.html'
     };
 }
 
