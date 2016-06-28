@@ -1,0 +1,21 @@
+{
+  "name": "Slaw Thoughts",
+  "version": "0.0.1",
+  "description": "My Thoughts About Slaw",
+  "ignore": [
+    "node_modules",
+    "test",
+    "tests"
+  ],
+  "private": true,
+  "dependencies": {
+    "angular": "^1.5.7",
+    "angular-animate": "^1.5.7",
+    "angular-route": "^1.5.7",
+    "angular-material": "^1.1.0-rc4"
+  },
+  "resolutions": {
+    "angular": "1.5.7",
+    "angular-animate": "^1.5.7"
+  }
+}
