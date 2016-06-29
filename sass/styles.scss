@@ -3,26 +3,18 @@
 @import "slaw-header";
 @import "slaw-thoughts";
 
-html {
-    height: 100%;
-}
-
 body {
-    height: 100%;
-
     font-family: Roboto, Arial, sans-serif;
     -webkit-font-smoothing: antialiased;
-
-    overflow-x: hidden;
-    overflow-y: auto;
 }
 
 #main {
+    height: 100%;
     padding: 0;
     margin: 0;
     background-color: #e1e1e1;
-    overflow: auto;
-    -webkit-overflow-scrolling: auto;
+    overflow: scroll;
+    -webkit-overflow-scrolling: scroll;
 }
 
 .headshot {

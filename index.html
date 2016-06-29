@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <!-- update all metadata with appropriate application name/title -->
-<html lang="en" ng-app="slawThoughts" base="/" ng-cloak>
+<html id="test" lang="en" ng-app="slawThoughts" base="/" ng-cloak>
     <head>
         <base href="/"/>
 
@@ -40,13 +40,11 @@
     </head>
 
     <body ng-controller="MainController as mainCtrl" ng-cloak>
-        <slaw-header></slaw-header>
-
         <!-- future for slideout menu or something -->
         <!-- <slaw-menu></slaw-menu> -->
 
         <!-- ng-view main md-content -->
-        <md-content id="main" layout="column" flex ng-view></md-content>
+        <md-content id="main" layout="column" slaw-scroll flex ng-view></md-content>
     </body>
 
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script>
@@ -58,5 +56,6 @@
     <script type="text/javascript" src="js/controllers/main-controller.js"></script>
     <script type="text/javascript" src="js/controllers/slaw-controller.js"></script>
     <script type="text/javascript" src="js/directives/slaw-directives.js"></script>
+    <script type="text/javascript" src="js/directives/slaw-dom-directives.js"></script>
     <script type="text/javascript" src="js/lib/ngtweet.min.js"></script>
 </html>
