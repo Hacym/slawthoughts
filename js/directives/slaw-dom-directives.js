@@ -5,17 +5,18 @@ angular
     .module('slawThoughts')
     .directive('slawScroll', slawScroll);
 
-slawScroll.$inject = ['$timeout'];
+slawScroll.$inject = ['$timeout', '$window'];
 
-function slawScroll($timeout) {
+function slawScroll($timeout, $window) {
 	return {
         restrict: 'A',
         link: function ($scope, $element) {
             $timeout(function () {
                 $element.on('scroll', function() {
+                    var contentPosition = ($window.innerHeight / 2) - 64;
                     var scrollPosition = $element[0].scrollTop;
 
-                    if (scrollPosition >= 175) {
+                    if (scrollPosition >= contentPosition) {
                         $element.addClass('scrolled-past-hero');
                     } else {
                         $element.removeClass('scrolled-past-hero');

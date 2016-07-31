@@ -35,6 +35,9 @@
   .scrolled-past-hero #slawHeader .slaw-header-toolbar .slaw-header-title {
     color: #FFFFEE; }
 
+#slawThoughts #slawContainer .slaw-info-card {
+  margin: 0; }
+
 body {
   font-family: Roboto, Arial, sans-serif;
   -webkit-font-smoothing: antialiased; }
